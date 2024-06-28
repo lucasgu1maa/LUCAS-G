@@ -24,7 +24,8 @@ calcula automaticamente as larguras considerando: conteúdo, bordas, margens e p
 coloca a cor de fundo
 e um espaçamento interno*/
 
-header {
+header,
+footer {
     background-color: var(--primaria);
     padding: 1rem;
 }
@@ -67,4 +68,51 @@ alinha o itens na vertical com base no seu centro*/
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+    background-color: var(--tercoaroa);
+}
+
+  #index { 
+    background-image: url("https://picsum.photos/1920/1080?random=1");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: var(--tercoaroa);
+    text-align: center;
+
+}
+
+#copy {
+    text-align: start;
+}
+
+
+.alinhar {
+    display: flex;
+    align-items: center;
+
+}
+
+.img-fim {
+    display: flex;
+    justify-content: end;
+}
+
+.img-fim img {
+    margin: 0 1rem;
 }

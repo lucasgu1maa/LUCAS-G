@@ -26,7 +26,7 @@
                 <img src="images/star.png" alt="" width="30px" height="30px">
                 FAVORITOS
             </a>
-            <A href="">LOGIN</A>
+            <a href="">LOGIN</a>
 
         </nav>
         <main>
